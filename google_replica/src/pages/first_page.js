@@ -15,7 +15,6 @@ function FirstPage() {
             <p className="lower_redirecters" id="settings_clickable_text">Settings</p>
             <a className="upper_redirecters" id="gmail_redirecter" >Gmail</a>
             <a className="upper_redirecters" id="images_redirecter" >Images</a>
-            //buttons in the page
             <button className="search_buttons" id="search_button" >Google Search</button>
             <button className="search_buttons" id="lucky_button" >I'm Feeling Lucky</button>
             <button id="apps_button">
