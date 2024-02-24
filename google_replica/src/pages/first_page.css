@@ -1,0 +1,23 @@
+body{background-color:white;}
+
+#logo, #search_bar, #country_text, .lower_redirecters, .upper_redirecters, .search_buttons, #apps_button, #sign_button{position:absolute;}
+
+#logo{
+    top:10%;
+    left:40%;
+}
+#search_bar{
+    background-color:red;
+    width:400px;
+    top:32%;
+    left:32%;
+    font-size:18px;
+}
+
+#country_text{
+    font-family:Arial;
+    font-size:15px;
+    color:rgb(50,50,50);
+    top:85.5%;
+    left:2.2%;
+}

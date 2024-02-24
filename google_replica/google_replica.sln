@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C36B1A35-1D17-414B-B1CC-7D4880F10FD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pages", "pages", "{287B76FD-5975-4D13-B48D-461FC2CDFA53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gr_api", "src\pages\gr_api\gr_api.csproj", "{8D2DE1EB-56D5-42C4-829D-F6D629BDB24E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D2DE1EB-56D5-42C4-829D-F6D629BDB24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D2DE1EB-56D5-42C4-829D-F6D629BDB24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D2DE1EB-56D5-42C4-829D-F6D629BDB24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D2DE1EB-56D5-42C4-829D-F6D629BDB24E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{287B76FD-5975-4D13-B48D-461FC2CDFA53} = {C36B1A35-1D17-414B-B1CC-7D4880F10FD8}
+		{8D2DE1EB-56D5-42C4-829D-F6D629BDB24E} = {287B76FD-5975-4D13-B48D-461FC2CDFA53}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6716A8A2-5640-45AA-802C-FE7F0A72D5AE}
+	EndGlobalSection
+EndGlobal
