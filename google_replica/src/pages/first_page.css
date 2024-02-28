@@ -1,23 +1,106 @@
 body{background-color:white;}
 
-#logo, #search_bar, #country_text, .lower_redirecters, .upper_redirecters, .search_buttons, #apps_button, #sign_button{position:absolute;}
+#logo, #search_bar, #country_text, .lower_redirecters, .upper_redirecters, .search_buttons, #apps_button, #sign_button, .under_search_buttons{position:absolute;}
 
 #logo{
     top:10%;
     left:40%;
 }
 #search_bar{
-    background-color:red;
+    background-color:rgb(230,230,230);
     width:400px;
-    top:32%;
-    left:32%;
-    font-size:18px;
+    height:19px;
+    top:30%;
+    left:31%;
+    font-size:17px;
+    border:solid;
+    border-width:3px;
+    border-radius:10%;
+    border-color:rgb(210,210,210);
+    outline:none;
+}
+#search_bar:focus{
+    border-color:rgb(200,200,200);
 }
 
-#country_text{
+#country_text, .lower_redirecters, .upper_redirecters{
     font-family:Arial;
-    font-size:15px;
+    font-size:14px;
     color:rgb(50,50,50);
+} 
+
+#country_text{
+    font-size:15px;
     top:85.5%;
     left:2.2%;
 }
+
+.lower_redirecters{top:95%;}
+#about_redirect{left:2.4%;}
+#advertising_redirect{left:7.4%;}
+#business_redirect{left:14.4%;}
+#search_works_redirect{left:20.4%;}
+#privacy_redirect{left:83%;}
+#terms_redirect{left:88.8%;}
+#settings_clickable_text{
+    top:92.8%;
+    left:93.8%;
+}
+
+.upper_redirecters{
+    top:3%;
+    font-size:13px;
+}
+#gmail_redirecter{left:80%;}
+#images_redirecter{left:84%;}
+
+#apps_button, #apps_image{outline:none;}
+#apps_image{
+    width:17px;
+    height:17px;
+}
+#apps_button{
+    top:2.7%;
+    left:88.5%;
+    width:28px;
+    height:26px;
+    border:none;
+    outline: none;
+}
+#sign_button{
+    width:100px;
+    height:35px;
+    color:white;
+    background-color:rgb(70,80,255);
+    border-radius:5%;
+    top:2%;
+    left:91.5%;
+    outline:none;
+    border:none;
+    font-size:14px;
+}
+
+.search_buttons{
+    border:none;
+    top:30.3%;
+    width:25px;
+    height:22px;
+}
+#microphone_image, #camera_image{
+    width:17px;
+    height:17px;
+}
+#microphone_button{left:62%;}
+#camera_button{left:65%;}
+
+.under_search_buttons{
+    background-color:rgb(220,220,220);
+    font-size:14px;
+    outline:none;
+    border:none;
+    width:120px;
+    height:35px;
+    top:40%;
+}
+#gs_button{left:40%;}
+#lucky_button{left:50%;}
