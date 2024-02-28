@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route path="/index/:user/:password" element={<FirstPage/>} />
       <Route path="/login" element={<LoginPage/>} />
-      <Route path="/search/:keyword" element={<SearchPage/>}/>
+      <Route path="/search/:inserted_search" element={<SearchPage/>}/>
       <Route path="*" element={<Navigate to={undefined_main_page_route}/>} />
     </Routes>
   </Router>

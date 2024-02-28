@@ -52,20 +52,19 @@ app.get("/login_password", (req, res) => {
 
 //get links through a inserted keyword
 app.get("/keyword_search", (req, res) => {
-  const found_keyword = req.query.found_keyword
-  const sql_command = "SELECT * FROM pages WHERE keyword = \"" + found_keyword + "\";";
+  const inserted_keyword = req.query.inserted_keyword
+  const sql_command = "SELECT * FROM pages WHERE keyword = " + inserted_keyword + ";";
   connection.query(sql_command, (err,results)=>{
     if (err) {
       console.error('Error executing query:', err);
       res.status(500).send('Internal Server Error');
     } else {
-        //false = user doesn't exist, true = user found
         if(results[0] === null || results[0] === undefined){res.send(false)}
-        else{res.send(true);}
+        else{res.send(results);}
     }
   })
-
 })
+
 
 app.listen(9000, () => {
   console.log('Servidor rodando na porta 9000');

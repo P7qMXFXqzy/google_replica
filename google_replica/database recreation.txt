@@ -1,3 +1,9 @@
 create database google_replica;
 create table users (email VARCHAR(500) UNIQUE NOT NULL, name VARCHAR(500) NOT NULL, password VARCHAR(500) NOT NULL);
 INSERT INTO users VALUES ("user1@gmail.com", "name1", "password1"), ("user_two@gmail.com", "name_two", "password_two"), ("abc123@gmail.com", "xyz321", "ab34");
+CREATE TABLE pages (url VARCHAR(500) NOT NULL, title VARCHAR(200) NOT NULL, description VARCHAR(500), keyword VARCHAR(100));
+
+INSERT INTO pages VALUES 
+("https://www.skysports.com/", "Sky Sports - Sports News, Transfers, Scores | Watch Live ...", "Watch the best live coverage of your favourite sports: Football, Golf, Rugby, Cricket, F1, Boxing, NFL, NBA, plus the latest sports news, ...", "soccer"), 
+("https://www.bbc.com/sport", "BBC Sport - Scores, Fixtures, News - Live Sport", "Sports news and live sports coverage including scores, results, video, audio and analysis on Football, F1, Cricket, Rugby Union and all other UK sports", "soccer"), 
+("https://www.foxsports.com/", "FOX Sports News, Scores, Schedules, Odds, Shows, Streams ...", "Watch FOX Sports and view live scores, odds, team news, player news, streams, videos, stats, standings & schedules covering NFL, MLB, NASCAR, WWE, NBA, NHL, ...", "soccer");
